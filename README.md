@@ -2,8 +2,8 @@
 
 ## Setting up
 
-- Download Node JS
-- Set yourself in the spotifyAPI\web-api-auth-examples-master\authorization_code directory
+- Download and configure Node JS
+- Set yourself in the spotifyAPI\web-api-auth-examples-master\authorization_code directory on your computer (Where the project is locally)
 - Open a CMD
 - write in your CMD npm install
 - write in your CMD node app.js
