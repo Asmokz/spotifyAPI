@@ -15,7 +15,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = '3846e8719b2048d986f4fe448d416dae'; // Your client id
 var client_secret = '33525f66925d4370abfded28ad12c0c0'; // Your secret
-var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+var redirect_uri = "http://localhost:8888/callback"; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -47,14 +47,14 @@ app.get('/login', function(req, res) {
 
   // your application requests authorization
   var scope = 'user-read-private user-read-email';
-  res.redirect('https://accounts.spotify.com/authorize?' +
+  res.redirect('https://accounts.spotify.com/authorize?' + 
     querystring.stringify({
       response_type: 'code',
       client_id: client_id,
       scope: scope,
       redirect_uri: redirect_uri,
       state: state
-    }));
+    }, null, null, { encodeURIComponent: querystring.unescape }));
 });
 
 app.get('/callback', function(req, res) {
