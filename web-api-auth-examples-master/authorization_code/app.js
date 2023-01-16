@@ -15,7 +15,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = '3846e8719b2048d986f4fe448d416dae'; // Your client id
 var client_secret = '33525f66925d4370abfded28ad12c0c0'; // Your secret
-var redirect_uri = "http://ec2-13-38-238-202.eu-west-3.compute.amazonaws.com:8888/callback"; // Your redirect uri
+var redirect_uri = "ec2-13-38-238-202.eu-west-3.compute.amazonaws.com:8888/callback"; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
